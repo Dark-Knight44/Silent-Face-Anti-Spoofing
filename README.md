@@ -1,4 +1,3 @@
-[中文版](README.md)|**English Version**  
 ![Silent-Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/logo.jpg)  
 # Silent-Face-Anti-Spoofing 
 
@@ -97,14 +96,14 @@ cd Silent-Face-Anti-Spoofing
 python train.py --device_ids 0  --patch_info your_patch
 ```  
 ### Test
- ./resources/anti_spoof_models Fusion model of in living detection  
- ./resources/detection_model Detector  
+ ./resources/anti_spoof_models Fusion model of in living detection   
  ./images/sample Test Images  
  ```
- python test.py --image_name your_image_name
+ python test.py \
+    --model resources/anti_spoof_models/2.7_80x80_MiniFASNetV2.pth \
+    --image /path/to/face.jpg
  ```    
 ## Reference 
-- Detector [RetinaFace](https://github.com/deepinsight/insightface/tree/master/RetinaFace)  
 
 For this project, in order to facilitate the technical exchange of developers, we created QQ group: 1121178835, welcome to join.  
 
